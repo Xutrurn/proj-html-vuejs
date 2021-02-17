@@ -43,9 +43,92 @@ var app = new Vue({
       indirizzo: "Main Avenue, 987"
     },
 
-
-
-
+    // dati footer
+    datiFooter: [{
+        titolo: "About",
+        links: [{
+            nome: "The Company",
+            link: "#company"
+          },
+          {
+            nome: "Institutional",
+            link: "index.html"
+          },
+          {
+            nome: "Social & Events",
+            link: "index.html"
+          },
+          {
+            nome: "Innovation",
+            link: "index.html"
+          },
+          {
+            nome: "Environment",
+            link: "index.html"
+          },
+          {
+            nome: "Technology",
+            link: "index.html"
+          }
+        ]
+      },
+      {
+        titolo: "Services",
+        links: [{
+            nome: "Audit & Assurance",
+            link: "index.html"
+          },
+          {
+            nome: "Financial Advisory",
+            link: "index.html"
+          },
+          {
+            nome: "Analytics M&A",
+            link: "index.html"
+          },
+          {
+            nome: "Middle Marketing",
+            link: "index.html"
+          },
+          {
+            nome: "Legal Consulting",
+            link: "index.html"
+          },
+          {
+            nome: "Regulatory Risk",
+            link: "index.html"
+          }
+        ]
+      },
+      {
+        titolo: "Support",
+        links: [{
+            nome: "Responsability",
+            link: "index.html"
+          },
+          {
+            nome: "Terms of Use",
+            link: "index.html"
+          },
+          {
+            nome: "About Cookies",
+            link: "index.html"
+          },
+          {
+            nome: "Privacy Policy",
+            link: "index.html"
+          },
+          {
+            nome: "Accessibility",
+            link: "index.html"
+          },
+          {
+            nome: "Information",
+            link: "index.html"
+          }
+        ]
+      }
+    ]
   }, // fine data
 
   methods: {} //fine methods

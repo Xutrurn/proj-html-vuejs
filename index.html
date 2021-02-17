@@ -86,6 +86,32 @@
     <!-- FOOTER -->
     <footer>
 
+      <!-- footer Info-Nav -->
+      <section id="footer-links">
+        <div class="container flex">
+
+          <div class="info">
+            <div class="logo"><span class="underlined elfgreen">{{datiAzienda.logoSx.toUpperCase()}}</span> {{datiAzienda.logoDx.toUpperCase()}}</div>
+            <p>{{datiAzienda.descrizione}}</p>
+            <div class="contacts">
+              <a href="index.html"><i class="fas fa-phone"></i><span>{{datiAzienda.numeroTelefono}}</span></a>
+              <a href="index.html"><i class="fas fa-envelope"></i><span>{{datiAzienda.email}}</span></a>
+              <a href="index.html"><i class="fas fa-map-marker-alt"></i><span>{{datiAzienda.indirizzo}}</span></a>
+            </div>
+            <a href="index.html" class="transp-btn">GET IN TOUCH</a>
+          </div>
+
+          <div class="navig" v-for="element in datiFooter">
+            <h3>{{element.titolo}}</h3>
+            <div v-for="link in element.links">
+              <i class="fas fa-chevron-right"></i>
+              <a :href="link.link">{{link.nome}}</a>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
 
     </footer>
 
