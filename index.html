@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;800&display=swap">
+  <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
+  <link rel="stylesheet" href="css/style.css">
+  <title>insurance-consulting</title>
+</head>
+
+<body>
+  <div id="app">
+
+    <!-- HEADER -->
+    <header>
+
+      <!-- Top Navbar -->
+      <section id="top-nav">
+        <div class="container flex">
+          <div class="flex">
+            <a href="index.html"><i class="fas fa-clock"></i><span>Open Hours: {{datiAzienda.orarioApertura}}</span></a>
+          </div>
+          <div class="flex">
+            <a href="index.html"><i class="fas fa-phone"></i><span>{{datiAzienda.numeroTelefono}}</span></a>
+            <a href="index.html"><i class="fas fa-envelope"></i><span>{{datiAzienda.email}}</span></a>
+            <a href="index.html"><i class="fab fa-facebook-f"></i></a>
+            <a href="index.html"><i class="fab fa-twitter"></i></a>
+            <a href="index.html"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Jumbotron -->
+      <section id="jumbo">
+
+        <!-- Bottom NavBar -->
+        <nav class="container flex">
+          <div class="logo"><span class="underlined elfgreen">{{datiAzienda.logoSx.toUpperCase()}}</span> {{datiAzienda.logoDx.toUpperCase()}}</div>
+          <div class="flex">
+            <a v-for="element in bottomNav" :href="element.link">{{element.nome}}</a>
+            <a href="#jumbo" class="green-btn">GET IN TOUCH</a>
+          </div>
+        </nav>
+
+        <!-- Jumbotron form -->
+        <div class="flex">
+          <div>
+            <h4>{{datiAzienda.attivita.toUpperCase()}}</h4>
+            <h1>{{datiAzienda.areaAttivita}}</h1>
+            <div id="jumbo-form">
+              <div class="flex">
+                <input type="text" placeholder="Name">
+                <input type="email" placeholder="Email">
+              </div>
+              <div class="flex">
+                <input type="text" placeholder="Phone">
+                <select placeholder="we">
+                  <option value="" selected disabled>More Info</option>
+                  <option value="private">Private</option>
+                  <option value="company">Company</option>
+                </select>
+              </div>
+              <div class="flex">
+                <div class="green-btn">GET IN TOUCH</div>
+                <a href="index.html" class="transp-btn">READ MORE</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+      </section>
+
+    </header>
+
+    <!-- MAIN -->
+    <main>
+
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+
+
+    </footer>
+
+
+
+
+
+  </div>
+  <script src="js/script.js"></script>
+</body>
+
+</html>
