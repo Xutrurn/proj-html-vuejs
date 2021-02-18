@@ -80,6 +80,47 @@
     <!-- MAIN -->
     <main>
 
+      <!-- Team -->
+      <section id="team">
+        <div class="container">
+          <h4>WE LIKE WHAT WE DO</h4>
+          <div class="flex">
+
+            <!-- Team Sinistra -->
+            <div class="left">
+              <h2><span class="underlined">Team</span> of Experts</h2>
+              <p>Ethics and integrity are the bases on which our professuibaks build their careers.</p>
+              <p>They are founfamentals that become daily attitudes.</p>
+              <div class="flex">
+                <div v-for="element in membriStaff" class="team-id flex">
+                  <img :src="element.img" alt="element.nome">
+                  <div>
+                    <h3>{{element.nome}}</h3>
+                    <p>{{element.ruolo}}</p>
+                    <div class="flex">
+                      <a :href="element.linkFb"><span class="elfgreen flex"><i class="fab fa-facebook-f"></i></span></a>
+                      <a :href="element.linkTw"><span class="elfgreen flex"><i class="fab fa-twitter"></i></span></a>
+                      <a :href="element.linkIn"><span class="elfgreen flex"><i class="fab fa-linkedin-in"></i></span></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Team Destra -->
+            <div class="right">
+              <i class="fas fa-quote-right"></i>
+              <h3>President Speech</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.</p>
+              <p>Incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+              <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+              <p>T. Johnson</p>
+            </div>
+
+          </div>
+
+        </div>
+      </section>
 
     </main>
 

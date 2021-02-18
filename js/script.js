@@ -43,6 +43,41 @@ var app = new Vue({
       indirizzo: "Main Avenue, 987"
     },
 
+    // membri azienda
+    membriStaff: [{
+        img: "img/team-1.jpg",
+        nome: "David Cooper",
+        ruolo: "CTO & CO-FOUNDER",
+        linkFb: "#team",
+        linkTw: "#team",
+        linkIn: "#team"
+      },
+      {
+        img: "img/team-3.jpg",
+        nome: "Oliver Jones",
+        ruolo: "CHIEF PROCUREMENT",
+        linkFb: "#team",
+        linkTw: "#team",
+        linkIn: "#team"
+      },
+      {
+        img: "img/team-2.jpg",
+        nome: "Emma Lopez",
+        ruolo: "CHIEF MARKETING",
+        linkFb: "#team",
+        linkTw: "#team",
+        linkIn: "#team"
+      },
+      {
+        img: "img/team-4.jpg",
+        nome: "T. Johnson",
+        ruolo: "CEO & PRESIDENT",
+        linkFb: "#team",
+        linkTw: "#team",
+        linkIn: "#team"
+      },
+    ],
+
     // dati footer
     datiFooter: [{
         titolo: "About",
