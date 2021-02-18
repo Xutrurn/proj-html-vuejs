@@ -168,6 +168,152 @@ nav>div:last-child>* {
 }
 
 /* Main */
+/* Azienda */
+#company {
+  background-color: #121117;
+  color: white;
+}
+
+#company .container>div {
+  padding: 100px 0;
+  width: 50%;
+}
+
+/* company left */
+#company .left {
+  margin-right: 100px;
+}
+
+#company .left p:last-child {
+  margin-top: 15px;
+}
+
+/* company right */
+#company .right {
+  flex-wrap: wrap;
+}
+
+#company .right>div {
+  width: calc((100% - 30px) / 2);
+  margin-top: 10px;
+}
+
+#company .right>div:nth-child(2), #company .right>div:nth-child(4) {
+  margin-left: 30px
+}
+
+#company .right>div:nth-child(3), #company .right>div:nth-child(4) {
+  margin-top: 30px
+}
+
+#company .right p {
+  margin-top: 15px
+}
+
+#company .right i {
+  color: #45bbbc;
+  margin-right: 5px;
+}
+
+/* Services and News*/
+#services {
+  padding: 100px 0;
+  background-color: #e8ecea;
+  color: #21333e;
+}
+
+.p-space {
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.p-space>p {
+  width: 80%;
+}
+
+#services>.container>div:last-child, #news>.container>div:last-child {
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+#services .box, #news .box {
+  background-color: white;
+  border-radius: 10px;
+  width: calc((100% - 60px) / 3);
+  margin-top: 30px;
+  position: relative;
+}
+
+#services .box {
+  padding: 30px;
+}
+
+#services .box i {
+  color: #45bbbc;
+  font-size: 40px;
+}
+
+#services .box h3 {
+  margin: 20px 0;
+}
+
+#services .box i.fas.fa-arrow-right {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  font-size: 25px;
+}
+
+/* Process */
+#process {
+  padding: 100px 0;
+  text-align: center;
+  color: #21333e;
+}
+
+#process>p {
+  width: 700px;
+  margin: auto;
+  margin-bottom: 40px;
+}
+
+#process .sequency {
+  position: relative;
+}
+
+#process .sequency>div:last-child {
+  display: flex;
+  width: 80%;
+  margin: auto;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+#process .step {
+  padding: 0 40px;
+  z-index: 100;
+}
+
+#process .step h3 {
+  margin: 20px 0;
+}
+
+#process .step .numeri {
+  padding: 10px;
+  border-radius: 50%;
+  background-color: #b3d9d9;
+  display: inline-block;
+  font-weight: bold;
+}
+
+#line {
+  background-color: rgba(4, 131, 131, 0.3);
+  height: 4px;
+  width: 100%;
+  position: absolute;
+  top: 17px;
+}
+
 /* Team */
 #team {
   padding: 100px 0;
