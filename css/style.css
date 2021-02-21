@@ -142,9 +142,9 @@ nav>div:last-child>* {
 }
 
 #jumbo>div {
+  margin-left: 60%;
   height: calc(100% - 60px);
   width: 500px;
-  margin-left: 50%;
 }
 
 #jumbo h1 {
@@ -401,6 +401,71 @@ nav>div:last-child>* {
   filter: opacity(0.5);
 }
 
+/* News */
+#news {
+  padding: 100px 0;
+  color: #21333e;
+}
+
+#news .box {
+  position: relative;
+  /* transition: 0.2s; */
+}
+
+#news .box img {
+  width: 100%;
+  border-radius: 10px;
+  filter: brightness(0.5);
+}
+
+#news .box>div {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 50px;
+  color: white;
+}
+
+/* Know */
+#know {
+  padding: 100px 0;
+  background-image: url(../img/bg-1.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+#know h2 {
+  color: white;
+}
+
+#know>.flex {
+  width: 50%;
+  margin: auto;
+}
+
+#know>.flex>div:first-child {
+  width: 50%;
+  padding-right: 20px;
+}
+
+#know>.flex>div:last-child {
+  width: 50%;
+  padding-left: 20px;
+}
+
+#know input {
+  margin-bottom: 10px;
+  padding: 10px;
+  width: 100%;
+  filter: opacity(0.5);
+  border-radius: 5px;
+}
+
+#know .green-btn {
+  display: inline-block;
+}
+
 /* Footer */
 /* footer-links */
 #footer-links {
@@ -463,4 +528,19 @@ nav>div:last-child>* {
 
 #footer-links .navig a:hover {
   color: #048383;
+}
+
+/* noAllaPirateria */
+#noAllaPirateria {
+  background-color: #0d0d11;
+}
+
+#noAllaPirateria .container {
+  font-size: 12px;
+  height: 60px;
+  justify-content: space-between;
+}
+
+#noAllaPirateria a .elfgreen:hover {
+  color: #c86f29;
 }
